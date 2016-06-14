@@ -1,0 +1,14 @@
+<% include ../partials/header.ejs %>
+
+  <h1>All Animals</h1>
+
+
+ 
+  <% animals.forEach(function(animal, idx){ %>
+    <h2><%= animal.name %></h2>
+    <a href="/animals/<%= idx %>">View animal</a>
+  <% }); %>
+
+  <p>&copy; 2016 WDI Industries.</p>
+
+<% include ../partials/footer.ejs %>
